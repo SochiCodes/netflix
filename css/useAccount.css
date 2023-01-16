@@ -81,9 +81,6 @@ main section div.user-box{
     gap: 20px;
     color: var(--grey);
 }
-main section img{
-    cursor: pointer;
-}
 
 
 @media screen and (max-width: 450px){
