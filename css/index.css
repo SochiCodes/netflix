@@ -62,6 +62,9 @@ nav div.buttons button.second-button{
     background-color: var(--red);
     color: white;
 }
+nav div.buttons  a {
+    text-decoration: none;
+}
 
 header section{
     width: 100%;
