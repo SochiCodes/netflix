@@ -240,7 +240,8 @@ section div.content p.p-two{
 
 footer{
     width: 100%;
-    height: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -453,11 +454,11 @@ div.column div.button button{
         height: 280px;
     }
     main section.faq div.content{
-        width: 600px;
+        width: 350px;
     }
     
     main section.faq div.content div.faq-section details summary{
-        width: 600px;
+        width: 350px;
     }
     main section.row1 div.content, main section.row2 div.content, main section.row3 div.content, main section.row4 div.content{
         flex-direction: column-reverse;
@@ -488,7 +489,140 @@ div.column div.button button{
     main section.faq div.content{
         width: 430px;
     }
+    footer section.footer{
+        
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        padding-bottom: 20px;
     
-    
+    }
+      
 }
+
+@media screen and (max-width: 320px) {
+    header{
+        height: 550px;
+    }
+    nav div.buttons button.first-button{
+        display: none;
+    }
+    header nav {
+        padding: 23px 23px;
+        margin: 0;
+    }
+    nav div.buttons button.second-button{
+        width: 70px;
+        height: 28px;
+    }
+    header nav img {
+        width: 80px;
+    }
+    header nav div.buttons button.first-button{
+        display: none;
+    }
+    header section div.content{
+        width: 280px;
+        margin-top: 0px;
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+        padding: 10px;
+    }
+    header section div.content h1{
+        font-size: 26px;
+        font-weight: 300px;
+    }
+    header section div.content p.p-two{
+        font-size: 14px;
+        font-weight: 400px; 
+    }
+    header section div.content p.p-one{
+        font-size: 14px;
+        font-weight: 400px; 
+    }
+    section div.content form{
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+    section div.content form input#emailAddress{
+        width: 260px;
+        height: 45px;
+        border-radius: 2px;
+    }
+    section div.content form button{
+        width: 140px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 2px;
+        gap: 8px;
+    }
+    section div.content form button img{
+        width: 13px;
+    }
+    main section.row1 div.content, main section.row2 div.content, main section.row3 div.content, main section.row4 div.content{
+        flex-direction: column-reverse;
+        gap: 10px;
+        padding: 30px 10px;
+        text-align: center;
+    }
+    main section.row1 div.content p,  main section.row2 div.content p,  main section.row3 div.content p,  main section.row4 div.content p{
+        font-size: 14px;
+    }
+    main section.row1 div.content h1,  main section.row2 div.content h1,  main section.row3 div.content h1,  main section.row4 div.content h1{
+        font-size: 20px;
+    }
+    .film-image{
+        width: 250px;
+        height: 200px;
+    }
+    main section.faq div.content{
+        width: 300px;
+    }
+    
+    main section.faq div.content div.faq-section details summary{
+        width: 300px;
+    }
+    main section.row1 div.content, main section.row2 div.content, main section.row3 div.content, main section.row4 div.content{
+        flex-direction: column-reverse;
+        gap: 10px;
+        padding: 50px 40px;
+        text-align: center;
+    }
+
+
+    div.content div.article h1{
+        font-size: 26px;
+    }
+    div.content div.article p{
+        font-size: 18px;
+    }
+
+    main section.faq div.content div.faq-section h1{
+        text-align: center;
+        font-size: 30px;
+        width: 300px;
+    }
+    main section.faq div.content div.faq-section details summary{
+        width: 280px;
+    }
+    main section.faq div.content div.faq-section details summary p{
+        font-size: 18px;
+    }
+    summary:after{
+        content: url('/svg/plusIcon.svg');
+        width: 30px;
+    }
+    
+    details[open] summary::after{
+        content: url('/svg/minusIcon.svg');
+        width: 30px;
+    }
+    main section.faq div.content{
+        width: 280px;
+    }
+      
+}
+
 /* Mobile Responsiveness Ends here */
